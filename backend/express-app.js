@@ -12,6 +12,7 @@ import { fileURLToPath } from "url";
 import cookieParser from "cookie-parser";
 import { setupSwagger } from "./utils/index.js";
 import user from "./api/user.js";
+import gd from "./api/gd.js";
 
 const expressApp = async (app) => {
   const __filename = fileURLToPath(import.meta.url);
@@ -64,7 +65,7 @@ const expressApp = async (app) => {
   // API routes
   auth(app);
   user(app)
-
+  gd(app);
   // Error handling
   app.use(HandleErrors);
 };
