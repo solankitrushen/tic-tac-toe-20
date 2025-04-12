@@ -3,7 +3,10 @@ import { uniqueId } from "lodash";
 import {
   IconAperture,
   IconBrandPaypal,
-  IconMailCheck
+  IconMailCheck,
+  IconMessageChatbot,
+  IconVideo,
+  IconPlus
 } from "@tabler/icons-react";
 import { IconHelp } from "@tabler/icons-react";
 
@@ -20,45 +23,42 @@ const Menuitems = [
     href: "/",
     chipColor: "secondary",
   },
-  {
-    id: uniqueId(),
-    title: "Email Checker",
-    icon: IconMailCheck,
-    href: "/EmailChecker",
-  },
+
+
 
   {
     navlabel: true,
-    subheader: "Subscription",
+    subheader: "Tools",
   },
-
   {
     id: uniqueId(),
-    title: "Plans & Upgrade",
-    icon: IconBrandPaypal,
-    href: "/Plans-and-Upgrade",
+    title: "Ai-Interviewer",
+    icon: IconAperture,
+    href: "/ai-interview",
+    chipColor: "secondary",
+  },
+  {
+    id: uniqueId(),
+    title: "chatbot",
+    icon: IconMessageChatbot,
+    href: "/chatbot",
   },
   {
     navlabel: true,
-    subheader: "Develper",
+    subheader: "GD & Mock Interview",
   },
   {
     id: uniqueId(),
-    title: "My APIs",
-    icon: IconHelp,
-    href: "/myApis",
+    title: "Group Discussion",
+    icon: IconVideo,
+    href: "/group-discussion",
   },
 
   {
-    navlabel: true,
-    subheader: "Contact",
-  },
-  {
-
     id: uniqueId(),
-    title: "Send a mail",
-    icon: IconHelp,
-    href: "mailto:support@commerciax.com",
+    title: "Mock interview",
+    icon: IconPlus,
+    href: "/InterviewersList",
   },
   // {
 

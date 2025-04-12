@@ -354,6 +354,8 @@ const InterviewerBookingPage = () => {
                   onChange={(e) => setPaymentMethod(e.target.value)}
                   sx={{ mb: 3 }}
                 >
+                  <FormControlLabel value="Crypto" control={<Radio />} label="Crypto" />
+
                   <FormControlLabel value="card" control={<Radio />} label="Credit/Debit Card" />
                   <FormControlLabel value="paypal" control={<Radio />} label="PayPal" />
                 </RadioGroup>
